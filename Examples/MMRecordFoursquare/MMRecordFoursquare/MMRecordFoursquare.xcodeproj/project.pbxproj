@@ -60,6 +60,8 @@
 		55DB69CC184E66F400677CEA /* Venue.json in Resources */ = {isa = PBXBuildFile; fileRef = 55DB69CB184E66F400677CEA /* Venue.json */; };
 		55F8C4BB1848F8E000037D45 /* AFMMRecordResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F8C4BA1848F8E000037D45 /* AFMMRecordResponseSerializer.m */; };
 		55FB3C1A18C1A10400B861BA /* AFMMRecordSessionManagerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FB3C1918C1A10400B861BA /* AFMMRecordSessionManagerServer.m */; };
+		57F44CCB1ADE050000C83C53 /* MMRecordOrphanDeleter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44CCA1ADE050000C83C53 /* MMRecordOrphanDeleter.m */; };
+		57F44CCC1ADE050000C83C53 /* MMRecordOrphanDeleter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44CCA1ADE050000C83C53 /* MMRecordOrphanDeleter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,8 @@
 		55F8C4BA1848F8E000037D45 /* AFMMRecordResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializer.m; sourceTree = "<group>"; };
 		55FB3C1818C1A10400B861BA /* AFMMRecordSessionManagerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordSessionManagerServer.h; sourceTree = "<group>"; };
 		55FB3C1918C1A10400B861BA /* AFMMRecordSessionManagerServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordSessionManagerServer.m; sourceTree = "<group>"; };
+		57F44CC91ADE050000C83C53 /* MMRecordOrphanDeleter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRecordOrphanDeleter.h; sourceTree = "<group>"; };
+		57F44CCA1ADE050000C83C53 /* MMRecordOrphanDeleter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRecordOrphanDeleter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +398,8 @@
 				26ECD8A7195B3E8800DBB3C5 /* MMRecordDebugger.m */,
 				55D2789718297E01008CB6B4 /* MMRecordMarshaler.h */,
 				55D2789818297E01008CB6B4 /* MMRecordMarshaler.m */,
+				57F44CC91ADE050000C83C53 /* MMRecordOrphanDeleter.h */,
+				57F44CCA1ADE050000C83C53 /* MMRecordOrphanDeleter.m */,
 				55D2789918297E01008CB6B4 /* MMRecordProtoRecord.h */,
 				55D2789A18297E01008CB6B4 /* MMRecordProtoRecord.m */,
 				55D2789B18297E01008CB6B4 /* MMRecordRepresentation.h */,
@@ -551,6 +557,7 @@
 				55D2785D1829769B008CB6B4 /* AFURLResponseSerialization.m in Sources */,
 				55D2785B1829769B008CB6B4 /* AFURLConnectionOperation.m in Sources */,
 				55D27866182977F5008CB6B4 /* MMFoursquareSessionManager.m in Sources */,
+				57F44CCB1ADE050000C83C53 /* MMRecordOrphanDeleter.m in Sources */,
 				55D2785A1829769B008CB6B4 /* AFSecurityPolicy.m in Sources */,
 				55D278AD18297E01008CB6B4 /* MMServerPageManager.m in Sources */,
 				55D278581829769B008CB6B4 /* AFHTTPSessionManager.m in Sources */,
@@ -583,6 +590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F44CCC1ADE050000C83C53 /* MMRecordOrphanDeleter.m in Sources */,
 				55D278361829765E008CB6B4 /* MMRecordFoursquareTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

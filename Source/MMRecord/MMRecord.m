@@ -23,6 +23,7 @@
 #import "MMRecord.h"
 
 #import "MMRecordCache.h"
+#import "MMRecordOrphanDeleter.h"
 #import "MMRecordRepresentation.h"
 #import "MMRecordResponse.h"
 #import "MMServer.h"
@@ -830,62 +831,20 @@ NSString * const MMRecordAttributeAlternateNameKey = @"MMRecordAttributeAlternat
 }
 
 
-#pragma mark - Orphan Deletion Methods
+#pragma mark - Orphan Deletion Method
 
 + (void)conditionallyDeleteRecordsOrphanedByResponse:(id)responseObject
                                     populatedRecords:(NSArray *)populatedRecords
                                              options:(MMRecordOptions *)options
                                              context:(NSManagedObjectContext *)context {
-    if (options.deleteOrphanedRecordBlock != nil) {
-        NSArray *orphanedRecords = [self orphanedRecordsFromContext:context populatedRecords:populatedRecords];
-        
-        BOOL stop = NO;
-        
-        for (MMRecord *orphanedRecord in orphanedRecords) {
-            BOOL deleteOrphan = options.deleteOrphanedRecordBlock(orphanedRecord, populatedRecords, responseObject, &stop);
-            
-            if (deleteOrphan) {
-                [context deleteObject:orphanedRecord];
-            }
-            
-            if (stop) {
-                break;
-            }
-        }
-    }
-}
-
-+ (NSArray *)orphanedRecordsFromContext:(NSManagedObjectContext *)context
-                       populatedRecords:(NSArray *)populatedRecords  {
-    NSMutableArray *populatedObjectIDs = [NSMutableArray array];
-    NSMutableSet *orphanedObjectIDs = [NSMutableSet set];
-    
-    for (MMRecord *record in populatedRecords) {
-        [populatedObjectIDs addObject:[record objectID]];
-    }
     
     NSString *entityName = [[context MMRecord_entityForClass:self] name];
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:entityName];
-    fetchRequest.fetchBatchSize = 20;
-    
-    NSArray *allRecords = [context executeFetchRequest:fetchRequest error:NULL];
-    
-    for (MMRecord *record in allRecords) {
-        [orphanedObjectIDs addObject:[record objectID]];
-    }
-    
-    for (NSManagedObjectID *objectID in populatedObjectIDs) {
-        [orphanedObjectIDs removeObject:objectID];
-    }
-    
-    NSMutableArray *orphanedRecords = [NSMutableArray array];
-    
-    for (NSManagedObjectID *orphanedObjectID in orphanedObjectIDs) {
-        [orphanedRecords addObject:[context objectWithID:orphanedObjectID]];
-    }
-    
-    return orphanedRecords;
+    [MMRecordOrphanDeleter
+     conditionallyDeleteRecordsWithEntityName:entityName
+     orphanedByResponse:responseObject
+     populatedRecords:populatedRecords
+     deleteRule:options.deleteOrphanedRecordBlock
+     context:context];
 }
 
 

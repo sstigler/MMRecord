@@ -30,6 +30,7 @@
 		55C898C417068B2C004E3C50 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C898BA17068B2C004E3C50 /* Icon-Small@2x.png */; };
 		55C898C717068B2C004E3C50 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C898BD17068B2C004E3C50 /* iTunesArtwork.png */; };
 		55C898C817068B2C004E3C50 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C898BE17068B2C004E3C50 /* iTunesArtwork@2x.png */; };
+		57F44CD61ADE063400C83C53 /* MMRecordOrphanDeleter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44CD51ADE063400C83C53 /* MMRecordOrphanDeleter.m */; };
 		9FABD8A516FA7DC700184BA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FABD8A416FA7DC700184BA5 /* UIKit.framework */; };
 		9FABD8A716FA7DC700184BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FABD8A616FA7DC700184BA5 /* Foundation.framework */; };
 		9FABD8A916FA7DC700184BA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FABD8A816FA7DC700184BA5 /* CoreGraphics.framework */; };
@@ -106,6 +107,8 @@
 		55C898BA17068B2C004E3C50 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		55C898BD17068B2C004E3C50 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		55C898BE17068B2C004E3C50 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		57F44CD41ADE063400C83C53 /* MMRecordOrphanDeleter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRecordOrphanDeleter.h; sourceTree = "<group>"; };
+		57F44CD51ADE063400C83C53 /* MMRecordOrphanDeleter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRecordOrphanDeleter.m; sourceTree = "<group>"; };
 		9FABD8A116FA7DC700184BA5 /* MMRecordInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMRecordInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FABD8A416FA7DC700184BA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9FABD8A616FA7DC700184BA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -386,6 +389,8 @@
 				26ECD8AA195B3EA200DBB3C5 /* MMRecordDebugger.m */,
 				9FABD98316FA93EF00184BA5 /* MMRecordMarshaler.h */,
 				9FABD98416FA93EF00184BA5 /* MMRecordMarshaler.m */,
+				57F44CD41ADE063400C83C53 /* MMRecordOrphanDeleter.h */,
+				57F44CD51ADE063400C83C53 /* MMRecordOrphanDeleter.m */,
 				9FABD98816FA93EF00184BA5 /* MMRecordProtoRecord.h */,
 				9FABD98916FA93EF00184BA5 /* MMRecordProtoRecord.m */,
 				9FABD98A16FA93EF00184BA5 /* MMRecordRepresentation.h */,
@@ -560,6 +565,7 @@
 				9FABD99216FA93EF00184BA5 /* MMRecord.m in Sources */,
 				9FABD99316FA93EF00184BA5 /* MMRecordCache.m in Sources */,
 				9FABD99716FA93EF00184BA5 /* MMRecordMarshaler.m in Sources */,
+				57F44CD61ADE063400C83C53 /* MMRecordOrphanDeleter.m in Sources */,
 				9FABD99916FA93EF00184BA5 /* MMRecordProtoRecord.m in Sources */,
 				9FABD99A16FA93EF00184BA5 /* MMRecordRepresentation.m in Sources */,
 				9FABD99B16FA93EF00184BA5 /* MMRecordResponse.m in Sources */,

@@ -45,6 +45,12 @@
             location = "group:MMRecordMarshaler.m">
          </FileRef>
          <FileRef
+            location = "group:MMRecordOrphanDeleter.h">
+         </FileRef>
+         <FileRef
+            location = "group:MMRecordOrphanDeleter.m">
+         </FileRef>
+         <FileRef
             location = "group:MMRecordProtoRecord.h">
          </FileRef>
          <FileRef

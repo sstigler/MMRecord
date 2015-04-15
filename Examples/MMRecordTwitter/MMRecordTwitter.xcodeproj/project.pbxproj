@@ -64,6 +64,7 @@
 		55C898DB17068B83004E3C50 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C898D317068B83004E3C50 /* Icon-Small@2x.png */; };
 		55C898DC17068B83004E3C50 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C898D417068B83004E3C50 /* iTunesArtwork.png */; };
 		55C898DD17068B83004E3C50 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C898D517068B83004E3C50 /* iTunesArtwork@2x.png */; };
+		57F44CCF1ADE059000C83C53 /* MMRecordOrphanDeleter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44CCE1ADE059000C83C53 /* MMRecordOrphanDeleter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +156,8 @@
 		55C898D317068B83004E3C50 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		55C898D417068B83004E3C50 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		55C898D517068B83004E3C50 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		57F44CCD1ADE059000C83C53 /* MMRecordOrphanDeleter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRecordOrphanDeleter.h; sourceTree = "<group>"; };
+		57F44CCE1ADE059000C83C53 /* MMRecordOrphanDeleter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRecordOrphanDeleter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 				26ECD8AD195B3EB600DBB3C5 /* MMRecordDebugger.m */,
 				55325F2716FD55910074C313 /* MMRecordMarshaler.h */,
 				55325F2816FD55910074C313 /* MMRecordMarshaler.m */,
+				57F44CCD1ADE059000C83C53 /* MMRecordOrphanDeleter.h */,
+				57F44CCE1ADE059000C83C53 /* MMRecordOrphanDeleter.m */,
 				55325F2916FD55910074C313 /* MMRecordProtoRecord.h */,
 				55325F2A16FD55910074C313 /* MMRecordProtoRecord.m */,
 				55325F2B16FD55910074C313 /* MMRecordRepresentation.h */,
@@ -494,6 +499,7 @@
 				55325F3616FD55910074C313 /* MMRecordCache.m in Sources */,
 				55325F3916FD55910074C313 /* MMRecordMarshaler.m in Sources */,
 				55325F3A16FD55910074C313 /* MMRecordProtoRecord.m in Sources */,
+				57F44CCF1ADE059000C83C53 /* MMRecordOrphanDeleter.m in Sources */,
 				55325F3B16FD55910074C313 /* MMRecordRepresentation.m in Sources */,
 				55325F3C16FD55910074C313 /* MMRecordResponse.m in Sources */,
 				55325F3D16FD55910074C313 /* MMServer.m in Sources */,

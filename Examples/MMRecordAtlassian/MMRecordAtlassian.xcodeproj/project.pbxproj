@@ -31,6 +31,7 @@
 		55A1CC26195B9C6A007FBCB8 /* MMServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A1CC19195B9C6A007FBCB8 /* MMServer.m */; };
 		55A1CC27195B9C6A007FBCB8 /* MMServerPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A1CC1B195B9C6A007FBCB8 /* MMServerPageManager.m */; };
 		55A1CC28195B9C6A007FBCB8 /* MMJSONServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A1CC1E195B9C6A007FBCB8 /* MMJSONServer.m */; };
+		57F44CC81ADE04DC00C83C53 /* MMRecordOrphanDeleter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44CC71ADE04DC00C83C53 /* MMRecordOrphanDeleter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		55A1CC1B195B9C6A007FBCB8 /* MMServerPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMServerPageManager.m; sourceTree = "<group>"; };
 		55A1CC1D195B9C6A007FBCB8 /* MMJSONServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMJSONServer.h; sourceTree = "<group>"; };
 		55A1CC1E195B9C6A007FBCB8 /* MMJSONServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMJSONServer.m; sourceTree = "<group>"; };
+		57F44CC61ADE04DC00C83C53 /* MMRecordOrphanDeleter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRecordOrphanDeleter.h; sourceTree = "<group>"; };
+		57F44CC71ADE04DC00C83C53 /* MMRecordOrphanDeleter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRecordOrphanDeleter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 				55A1CC0F195B9C6A007FBCB8 /* MMRecordDebugger.m */,
 				55A1CC10195B9C6A007FBCB8 /* MMRecordMarshaler.h */,
 				55A1CC11195B9C6A007FBCB8 /* MMRecordMarshaler.m */,
+				57F44CC61ADE04DC00C83C53 /* MMRecordOrphanDeleter.h */,
+				57F44CC71ADE04DC00C83C53 /* MMRecordOrphanDeleter.m */,
 				55A1CC12195B9C6A007FBCB8 /* MMRecordProtoRecord.h */,
 				55A1CC13195B9C6A007FBCB8 /* MMRecordProtoRecord.m */,
 				55A1CC14195B9C6A007FBCB8 /* MMRecordRepresentation.h */,
@@ -298,6 +303,7 @@
 			files = (
 				55A1CC25195B9C6A007FBCB8 /* MMRecordResponse.m in Sources */,
 				55A1CC21195B9C6A007FBCB8 /* MMRecordDebugger.m in Sources */,
+				57F44CC81ADE04DC00C83C53 /* MMRecordOrphanDeleter.m in Sources */,
 				26FC7C38195A64600066A195 /* Link.swift in Sources */,
 				55A1CC22195B9C6A007FBCB8 /* MMRecordMarshaler.m in Sources */,
 				26FC7C32195A641F0066A195 /* Plan.swift in Sources */,

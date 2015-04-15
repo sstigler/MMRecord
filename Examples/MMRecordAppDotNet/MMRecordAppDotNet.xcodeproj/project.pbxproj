@@ -91,6 +91,7 @@
 		55F9525A165C7F520060851E /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F95259165C7F520060851E /* PostCell.xib */; };
 		55F95260165C82B90060851E /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F9525F165C82B90060851E /* PostCell.m */; };
 		55F95262165C85870060851E /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F95261165C85870060851E /* avatar.png */; };
+		57F44CC51ADE049C00C83C53 /* MMRecordOrphanDeleter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44CC41ADE049C00C83C53 /* MMRecordOrphanDeleter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -235,6 +236,8 @@
 		55F9525E165C82B90060851E /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
 		55F9525F165C82B90060851E /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		55F95261165C85870060851E /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		57F44CC31ADE049C00C83C53 /* MMRecordOrphanDeleter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRecordOrphanDeleter.h; sourceTree = "<group>"; };
+		57F44CC41ADE049C00C83C53 /* MMRecordOrphanDeleter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRecordOrphanDeleter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,6 +487,8 @@
 				2648FBE8195AFC5B009A6CBB /* MMRecordDebugger.m */,
 				5569077916FA750D0040D191 /* MMRecordMarshaler.h */,
 				5569077A16FA750D0040D191 /* MMRecordMarshaler.m */,
+				57F44CC31ADE049C00C83C53 /* MMRecordOrphanDeleter.h */,
+				57F44CC41ADE049C00C83C53 /* MMRecordOrphanDeleter.m */,
 				267469EA16A1C226006A6A81 /* MMRecordProtoRecord.h */,
 				267469EB16A1C226006A6A81 /* MMRecordProtoRecord.m */,
 				55211F6816F179E300729C51 /* MMRecordRepresentation.h */,
@@ -690,6 +695,7 @@
 				55AA657218FB1F610018B4A0 /* FBTweakCategory.m in Sources */,
 				55E712BE16FE15E300EC1159 /* ADNPageManager.m in Sources */,
 				55AA657118FB1F610018B4A0 /* FBTweak.m in Sources */,
+				57F44CC51ADE049C00C83C53 /* MMRecordOrphanDeleter.m in Sources */,
 				55E712C216FE4A4000EC1159 /* ADNUsersViewController.m in Sources */,
 				55E712C716FE4A6D00EC1159 /* UserCell.m in Sources */,
 				55AA656F18FB1F610018B4A0 /* _FBTweakCollectionViewController.m in Sources */,
