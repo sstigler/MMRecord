@@ -527,7 +527,6 @@ NSString * const MMRecordAttributeAlternateNameKey = @"MMRecordAttributeAlternat
     [self conditionallyDeleteRecordsOphanedByResponse:responseObject
                                      populatedRecords:state.records
                                               options:options
-                                                state:state
                                               context:state.backgroundContext];
     
     [self performCachingForRecords:state.records
@@ -836,7 +835,6 @@ NSString * const MMRecordAttributeAlternateNameKey = @"MMRecordAttributeAlternat
 + (void)conditionallyDeleteRecordsOphanedByResponse:(id)responseObject
                                    populatedRecords:(NSArray *)populatedRecords
                                             options:(MMRecordOptions *)options
-                                              state:(MMRecordRequestState *)state
                                             context:(NSManagedObjectContext *)context {
     if (options.deleteOrphanedRecordBlock != nil) {
         NSArray *orphanedRecords = [self orphanedRecordsFromContext:context populatedRecords:populatedRecords];
