@@ -356,8 +356,9 @@
     if (additionalKeyPaths) {
         [keyPaths addObjectsFromArray:additionalKeyPaths];
     }
-    
-    [keyPaths addObject:attributeKey];
+    else {
+        [keyPaths addObject:attributeKey];
+    }
     
     MMRecordAttributeRepresentation *representation = [[MMRecordAttributeRepresentation alloc] init];
     representation.attributeDescription = attributeDescription;
